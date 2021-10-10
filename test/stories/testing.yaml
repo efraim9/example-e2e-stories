@@ -1,0 +1,5 @@
+name: testing nesting components
+
+steps:
+  - visit: https://efraim.tech
+  - component: testing.component#username=bestTesterEver#pass=qwerty15489

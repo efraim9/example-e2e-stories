@@ -1,0 +1,19 @@
+name: User can use input and search on google
+
+steps:
+  - visit: https://www.jakpsatweb.cz/
+  - exists: img
+  - exists: input
+  - exists: '[id="www-jakpsatweb-cz"]'
+  - fill: 
+        el: '[id="vyhpole"]'
+        text: testovani
+  - pause: 500
+  - click: '[type="submit"]'
+  - pause: 1000
+  - exists: .gs-title
+  - exists: '[data-ctorig="https://www.jakpsatweb.cz/katalog/uzivatelske-testovani.html"]'
+  - exists: .gcsc-branding
+  - pause: 1000
+  - click: .gs-title
+  - pause: 2000

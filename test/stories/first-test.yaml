@@ -1,0 +1,6 @@
+name: Visit example.com webpage, checks and clicks the link
+
+steps: 
+  - visit: ${process.env.URL}
+  - exists: '[href="https://www.iana.org/domains/example"]'
+  - click: '[href="https://www.iana.org/domains/example"]'

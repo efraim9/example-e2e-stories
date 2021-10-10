@@ -1,0 +1,7 @@
+name: component for testing nesting components
+
+steps: 
+  - screenshot:
+      path: test/spec/image.jpeg
+      type: jpeg
+      fullPage: true

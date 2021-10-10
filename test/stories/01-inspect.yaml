@@ -1,0 +1,21 @@
+name: User can see page headlines and use navigation
+
+steps:
+  - visit: https://www.jakpsatweb.cz/
+  - exists: img
+  - exists: input
+  - pause: 1000
+  - exists: '[id="www-jakpsatweb-cz"]'
+  - textIs: 
+      el: h1
+      text: "Jak psát web"
+  - pause: 500
+  - click: .js
+  - pause: 1000
+  - exists: h1
+  - textIs: 
+      el: h1
+      text: "JavaScript"
+  - click: '[id="logo"]'
+  - pause: 1000
+  - urlIs: https://www.jakpsatweb.cz/

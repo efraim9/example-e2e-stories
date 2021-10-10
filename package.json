@@ -1,0 +1,20 @@
+{
+  "name": "example-e2e-stories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "convert": "node puppeteer-convert-stories.js"
+  },
+  "jest": {
+    "setupFiles":  ["dotenv/config"],
+    "preset": "jest-puppeteer",
+    "testRunner": "jest-circus/runner"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "e2e-stories": "^0.1.4"
+  }
+}
