@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "convert": "node puppeteer-convert-stories.js"
+    "convert": "node convert-stories.js"
   },
   "jest": {
     "setupFiles":  ["dotenv/config"],
