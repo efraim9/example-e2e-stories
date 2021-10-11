@@ -7,7 +7,7 @@ describe(`User can see page headlines and use navigation`, function() {
 		context = await browser.createIncognitoBrowserContext()
 		page = await context.newPage()
 		random = +new Date
-		page.setExtraHTTPHeaders({})
+		page.setExtraHTTPHeaders({"bypass-Token":"SFSA-1625-REWQ-9531"})
 
 		return true
 	})

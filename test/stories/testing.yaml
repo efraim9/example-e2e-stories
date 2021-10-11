@@ -1,4 +1,4 @@
-name: testing nesting components
+name: Visits efraim.tech website and screenshots content on the webpage using component
 
 steps:
   - visit: https://efraim.tech

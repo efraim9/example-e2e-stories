@@ -1,4 +1,4 @@
-describe(`testing nesting components`, function() {
+describe(`Visits efraim.tech website and screenshots content on the webpage using component`, function() {
 	let context
 	let random
 	let page
@@ -7,7 +7,7 @@ describe(`testing nesting components`, function() {
 		context = await browser.createIncognitoBrowserContext()
 		page = await context.newPage()
 		random = +new Date
-		page.setExtraHTTPHeaders({})
+		page.setExtraHTTPHeaders({"bypass-Token":"SFSA-1625-REWQ-9531"})
 
 		return true
 	})
@@ -19,7 +19,7 @@ describe(`testing nesting components`, function() {
 
 	jest.retryTimes(3)
 	jest.setTimeout(50000)
-	it(`testing nesting components`, async () => {
+	it(`Visits efraim.tech website and screenshots content on the webpage using component`, async () => {
 		await page.goto(`https://efraim.tech`)
 		let username = 'bestTesterEver'
 		let pass = 'qwerty15489'

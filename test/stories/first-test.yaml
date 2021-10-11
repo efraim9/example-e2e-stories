@@ -1,4 +1,4 @@
-name: Visit example.com webpage, checks and clicks the link
+name: Navigates to example.com webpage, checks and clicks the link
 
 steps: 
   - visit: ${process.env.URL}

@@ -1,4 +1,4 @@
-name: component for testing nesting components
+name: Component which screenshots current page view
 
 steps: 
   - screenshot:
